@@ -56,9 +56,8 @@ AI_Resume_Analyser
 └── data
 ```
 
----
 
-## 📊 Workflow
+##  Workflow
 
 1. Recruiter pastes the Job Description.
 2. Uploads multiple candidate resumes.
