@@ -114,7 +114,6 @@ if st.button("🚀 Analyze Candidates"):
 
 
         missing_skill_count = len(missing_skills)
-
         if match_score >= 80 and missing_skill_count <= 2:
           decision = "🟢 Shortlisted"
 
@@ -279,4 +278,4 @@ if st.button("🚀 Analyze Candidates"):
     )
 
 else:
-    st.warning("No valid resumes could be analyzed.")
+   st.warning("No valid resumes could be analyzed.")
