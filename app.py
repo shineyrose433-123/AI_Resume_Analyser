@@ -114,8 +114,6 @@ if st.button("🚀 Analyze Candidates"):
 
 
         missing_skill_count = len(missing_skills)
-        st.write("AI Match:", match_score)
-        st.write("Missing Skills:", missing_skill_count)
 
         if match_score >= 80 and missing_skill_count <= 2:
           decision = "🟢 Shortlisted"
