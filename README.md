@@ -1,22 +1,21 @@
 # 🤖 AI Resume Analyser
 
-An AI-powered Resume Screening and ATS Analysis system developed using Python and Streamlit that helps recruiters efficiently evaluate, rank, and shortlist candidates based on a given Job Description.
+An AI-powered resume screening and candidate ranking application built with **Python** and **Streamlit**. The system analyzes multiple resumes against a given job description, calculates AI Match and ATS scores, identifies relevant skills, and automatically ranks candidates to assist recruiters in making faster and more informed hiring decisions.
 
 
-##  Features
+## Features
 
-- Upload multiple PDF resumes simultaneously
-- Paste any Job Description
-- AI-based Resume Matching
-- ATS Score Calculation
-- Skill Extraction
-- Matched Skills Detection
-- Missing Skills Detection
-- Automatic Candidate Ranking
-- Shortlist / Review / Reject Recommendation
-- Resume Text Viewer
-- Recruitment Dashboard
-- CSV Report Export
+- Upload and analyze multiple PDF resumes simultaneously
+- Compare resumes against any job description
+- AI-powered semantic resume matching
+- ATS score calculation
+- Automatic skill extraction
+- Identification of matched and missing skills
+- Intelligent candidate recommendation (Shortlisted / Review / Rejected)
+- Candidate ranking based on ATS score
+- Interactive recruitment dashboard
+- Resume content viewer
+- Export candidate rankings as a CSV report
 
 
 ##  Tech Stack
@@ -24,17 +23,18 @@ An AI-powered Resume Screening and ATS Analysis system developed using Python an
 - Python
 - Streamlit
 - Pandas
+- NumPy
 - Scikit-learn
 - Sentence Transformers
-- NLP
 - PDFPlumber
-- Git
-- GitHub
+- Natural Language Processing (NLP)
+- Git & GitHub
 
+---
 
-## Project Structure
+##  Project Structure
 
-```
+```text
 AI_Resume_Analyser
 │
 ├── app.py
@@ -42,14 +42,14 @@ AI_Resume_Analyser
 ├── README.md
 │
 ├── models
-│     └── matcher.py
+│   └── matcher.py
 │
 ├── utils
-│     ├── ats_score.py
-│     ├── candidate_name.py
-│     ├── resume_parser.py
-│     ├── skill_extractor.py
-│     └── text_cleaner.py
+│   ├── ats_score.py
+│   ├── candidate_name.py
+│   ├── resume_parser.py
+│   ├── skill_extractor.py
+│   └── text_cleaner.py
 │
 ├── assets
 ├── uploads
@@ -57,46 +57,70 @@ AI_Resume_Analyser
 ```
 
 
-##  Workflow
+##  How It Works
 
-1. Recruiter pastes the Job Description.
-2. Uploads multiple candidate resumes.
-3. The application extracts resume text.
-4. Skills are identified using NLP.
-5. AI Match Score is calculated.
-6. ATS Score is generated.
-7. Missing skills are identified.
-8. Candidates are ranked automatically.
-9. Final report can be downloaded as CSV.
+1. Enter the job description.
+2. Upload one or more PDF resumes.
+3. Resume text is extracted automatically.
+4. Relevant skills are identified from both the job description and resumes.
+5. An AI Match Score is calculated using semantic similarity.
+6. An ATS Score is generated based on AI similarity and skill matching.
+7. Missing and matched skills are displayed for every candidate.
+8. Candidates are categorized as **Shortlisted**, **Review**, or **Rejected**.
+9. A ranked candidate list is generated and can be exported as a CSV report.
 
 
 ## Output
 
-The application provides:
+For every uploaded resume, the application provides:
 
-- AI Match Score
-- ATS Score
-- Matched Skills
-- Missing Skills
-- Candidate Recommendation
-- Candidate Ranking
-- CSV Export
+- 👤 Candidate Name
+- 📄 Resume File Name
+- 🎯 AI Match Score
+- 📊 ATS Score
+- ✅ Matched Skills
+- ❌ Missing Skills
+- 📌 Hiring Recommendation
+- 🏆 Candidate Ranking
+
+The dashboard also displays:
+
+- Total resumes analyzed
+- Number of shortlisted candidates
+- Candidates requiring review
+- Rejected candidates
+- Average ATS score
+- Highest ATS score
+- Lowest ATS score
 
 
-##  Future Improvements
+##  Use Cases
 
-- Resume Parsing using LLMs
-- Semantic Skill Matching
-- Recruiter Login Dashboard
-- Cloud Deployment
-- Interview Recommendation Engine
-- Candidate Analytics Dashboard
+This project can be used by:
+
+- Recruiters
+- HR professionals
+- Hiring teams
+- Placement cells
+- Students learning AI and NLP
+- Anyone interested in automated resume screening
 
 
-##  Author
+##  Future Enhancements
 
-Shiney Rose.S
+- Advanced resume parsing using Large Language Models (LLMs)
+- Semantic skill matching with skill synonyms
+- Recruiter authentication and login system
+- Cloud deployment
+- Candidate interview recommendation engine
+- Interactive analytics dashboard
+- Resume scoring explanation and feedback generation
 
-B.Tech Artificial Intelligence & Data Science
 
-Python | Machine Learning | Data Science | AI
+## Author
+
+Shiney Rose S
+
+B.Tech – Artificial Intelligence & Data Science
+
+Passionate about Artificial Intelligence, Machine Learning, Data Science, and building practical AI applications that solve real-world problems.
