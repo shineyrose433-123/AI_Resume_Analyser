@@ -3,6 +3,12 @@
 An AI-powered resume screening and candidate ranking application built with **Python** and **Streamlit**. The system analyzes multiple resumes against a given job description, calculates AI Match and ATS scores, identifies relevant skills, and automatically ranks candidates to assist recruiters in making faster and more informed hiring decisions.
 
 
+##  Live Demo
+
+🔗 https://ai-resume-analyser-rose.streamlit.app
+
+
+
 ## Features
 
 - Upload and analyze multiple PDF resumes simultaneously
@@ -52,8 +58,8 @@ AI_Resume_Analyser
 │   └── text_cleaner.py
 │
 ├── assets
-├── uploads
-└── data
+  ├── screenshots
+
 ```
 
 
